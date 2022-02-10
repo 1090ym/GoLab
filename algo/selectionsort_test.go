@@ -12,7 +12,11 @@ func TestSelectionSort(t *testing.T) {
 	}
 
 	for i, test := range tests {
-		ShellSort(test)
+		//SelectionSort(test)
+		//InsertSort(test)
+		//ShellSort(test)
+		//MergeSort(test, 0, len(test)-1)
+		MergeSortBU(test)
 		fmt.Println("test ", i, ":", test, IsSorted(test))
 	}
 }
