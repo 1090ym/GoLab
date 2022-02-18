@@ -7,8 +7,8 @@ import (
 
 func TestSelectionSort(t *testing.T) {
 	tests := [][]int{
-		{5, 2, 6, 12, 9, 11, 3},
-		{54, 32, 26, 12, 39, 11, 3},
+		{12, 2, 3, 4, 9, 11, 13},
+		{2, 1, 26, 12, 39, 11, 3},
 	}
 
 	for i, test := range tests {
@@ -16,7 +16,8 @@ func TestSelectionSort(t *testing.T) {
 		//InsertSort(test)
 		//ShellSort(test)
 		//MergeSort(test, 0, len(test)-1)
-		MergeSortBU(test)
+		//MergeSortBU(test)
+		QuickSort(test, 0, len(test)-1)
 		fmt.Println("test ", i, ":", test, IsSorted(test))
 	}
 }
