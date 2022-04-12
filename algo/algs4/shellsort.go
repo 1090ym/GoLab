@@ -1,4 +1,4 @@
-package algo
+package algs4
 
 func ShellSort(nums []int) {
 	N := len(nums)

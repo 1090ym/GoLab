@@ -1,6 +1,8 @@
-package algo
+package algs4
 
-import "math"
+import (
+	"math"
+)
 
 func MergeSort(a []int, l int, h int) {
 	if h <= l {

@@ -1,4 +1,4 @@
-package algo
+package algs4
 
 import (
 	"fmt"

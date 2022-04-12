@@ -1,6 +1,7 @@
-package algo
+package cmd
 
 import (
+	"GoLab/algo/algs4"
 	"fmt"
 	"testing"
 )
@@ -17,7 +18,7 @@ func TestSelectionSort(t *testing.T) {
 		//ShellSort(test)
 		//MergeSort(test, 0, len(test)-1)
 		//MergeSortBU(test)
-		QuickSort(test, 0, len(test)-1)
-		fmt.Println("test ", i, ":", test, IsSorted(test))
+		algs4.QuickSort(test, 0, len(test)-1)
+		fmt.Println("test ", i, ":", test, algs4.IsSorted(test))
 	}
 }

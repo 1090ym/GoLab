@@ -1,4 +1,4 @@
-package algo
+package algs4
 
 func less(nums []int, a int, b int) bool {
 	return nums[a] < nums[b]

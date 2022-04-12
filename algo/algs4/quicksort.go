@@ -1,16 +1,16 @@
-package algo
+package algs4
 
 func QuickSort(a []int, lo int, hi int) {
 	if hi <= lo {
 		return
 	}
-	m := partition(a, lo, hi)
+	m := Partition(a, lo, hi)
 	QuickSort(a, lo, m)
 	QuickSort(a, m+1, hi)
 	return
 }
 
-func partition(a []int, lo int, hi int) int {
+func Partition(a []int, lo int, hi int) int {
 	i, j := lo+1, hi
 	for {
 		for i <= j && less(a, i, lo) {

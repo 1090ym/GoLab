@@ -1,4 +1,4 @@
-package algo
+package algs4
 
 func InsertSort(nums []int) {
 	N := len(nums)

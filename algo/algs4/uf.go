@@ -1,4 +1,4 @@
-package algo
+package algs4
 
 type UF struct {
 	id    []int
